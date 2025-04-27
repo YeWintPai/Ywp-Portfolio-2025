@@ -31,6 +31,16 @@
             html.dark {
                 background-color: oklch(0.145 0 0);
             }
+
+            #background-video {
+                position: fixed;
+                top: 0;
+                left: 0;
+                min-width: 100%;
+                min-height: 100%;
+                object-fit: cover;
+                z-index: -1;
+            }
         </style>
 
         <title inertia>{{ config('app.name', 'Laravel') }}</title>
@@ -45,5 +55,8 @@
     </head>
     <body class="font-sans antialiased bg-white cursor-none">
         @inertia
+        <video autoplay muted loop playsinline id="background-video">
+            <source src="{{ asset('/public/storage/images/bg-vid.mp4') }}" type="video/mp4">
+        </video>
     </body>
 </html>
