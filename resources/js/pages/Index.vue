@@ -101,6 +101,13 @@ const projects = [
     description: "Personal frontend Project for practice.",
     stack: ['html', 'css', 'bootstrap','javascript'],
   },
+  {
+    title: 'KMTS Dubai Website',
+    image: '/storage/project-imgs/kmts-dubai.png',
+    link: 'https://kmtsdubai.com/',
+    description: "Website for KMTS Dubai. Contributed in change requests and bug fixes.",
+    stack: ['alpine js', 'tailwind','javascript'],
+  },
   
 ];
 
