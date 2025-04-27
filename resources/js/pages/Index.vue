@@ -284,7 +284,7 @@ onMounted(() => {
                     <div class="flex md:justify-start justify-center items-start  mt-4">
                         <a href="https://github.com/YeWintPai" target="_blank" class="bg-cyan-700 hover:bg-cyan-500 text-xs text-white font-bold me-3 py-2 px-3 rounded">GitHub</a>
                         <a href="https://www.linkedin.com/in/ye-wint-pai-myel-aung-9269662bb/" target="_blank" class="bg-cyan-700 hover:bg-cyan-500 text-xs text-white font-bold mx-3 py-2 px-4 rounded">LinkedIn</a>
-                        <a href="" target="_blank" class="bg-cyan-700 hover:bg-cyan-500 text-xs text-white font-bold mx-3 py-2 px-4 rounded">CV</a>
+                        <a href="https://www.canva.com/design/DAGk-4YuYk8/Lhf8RbeABwSs-j-VyZd5Hg/view?utm_content=DAGk-4YuYk8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc15d90065e" target="_blank" class="bg-cyan-700 hover:bg-cyan-500 text-xs text-white font-bold mx-3 py-2 px-4 rounded">CV</a>
                     </div>
                 </div>
                 
