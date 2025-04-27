@@ -69,22 +69,39 @@ const projects = [
   {
     title: 'EduPlus Admin ( Backend )',
     image: '/storage/project-imgs/eduplus-admin-dashboard.png',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quae perferendis eos ipsum optio, quo, impedit reiciendis magnam modi, ratione sapiente sed. Doloremque dignissimos doloribus quaerat nam reiciendis libero, ducimus similique iure quasi dolor, odio explicabo quisquam minima. Ab nobis mollitia adipisci porro minima excepturi, rem delectus illum itaque in assumenda iure ipsa at commodi esse est voluptates illo, sunt quam consequuntur sint tenetur dolores. Officia, assumenda? Mollitia odit error commodi ut fugiat ad quod, animi nihil, assumenda maiores, quam temporibus iste quo rerum voluptate impedit quis nisi neque eum sapiente. Quaerat illum nesciunt, sapiente alias labore nobis ullam facilis id eveniet illo modi soluta sed, accusamus dolores excepturi eligendi, adipisci nulla sint sunt accusantium iure sit. Enim odio corrupti eos quisquam labore quis, ipsa doloribus fugiat nihil deserunt recusandae quia omnis maxime quod, dignissimos eaque? Eligendi quod dolore nesciunt impedit odit tempora perferendis pariatur dignissimos cumque. Dicta magnam quidem tempore magni eveniet praesentium, labore ut ratione similique minus sint. Minus, nesciunt asperiores dolor quos dolorem expedita cumque nihil sapiente, hic ab debitis tempora aut eveniet illo? Vitae suscipit voluptatibus enim eum! Eveniet, ipsam provident vero molestias labore explicabo, asperiores consequatur est esse ducimus sapiente blanditiis! Necessitatibus quae quibusdam reiciendis?',
+    link: 'https://www.eduplusmyanmar.com/',
+    description: "EduPlus is a full-featured School and LMS platform. It supports course enrollments by batches and subjects, detailed attendance tracking for physical and online classes, and flexible payment options including monthly, one-time, and custom fees. Mostly handled change requests and bug fixes. Developed a new feature for the system which is the dynamic Report Card module to help schools easily manage student assessments.",
     stack: ['php', 'laravel', 'bootstrap' ,'mysql'],
   },
   {
     title: 'EduPlus ( Frontend )',
     image: '/storage/project-imgs/eduplus-fe-home.png',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    description: 'Frontend application for students, teachers and guardians. Handled change requests from small adjustments to flow changes of the whole features and bug fixes.',
     stack: ['javascript', 'vue', 'tailwind'],
 
   },
   {
-    title: 'Artist Runorl Gallery',
-    image: 'https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    stack: ['php', 'laravel', 'tailwind'],
+    title: 'Thazin ( CMS )',
+    image: '/storage/project-imgs/thazin-jewelry.png',
+    link: 'https://thazinjewelry.com/',
+    description: "Website for Thazin Jewellry Shop. I contributed in developing front-end for this website including all the pages and responsive of the pages.",
+    stack: ['php', 'laravel', 'tailwind', 'filament'],
   },
+  {
+    title: 'Artist Runorl Gallery ( CMS )',
+    image: '/storage/project-imgs/runorl-gallery.png',
+    link: 'https://www.runorl-gallery.art/',
+    description: 'Website for my Dad who is an artist. I wanted to make a full stack app which is useful in real-life and have a positive impact to people around me so I developed this full stack CMS website. ',
+    stack: ['php', 'laravel', 'bootstrap','mysql'],
+  },
+  {
+    title: 'Honyx Designs Showcase',
+    image: '/storage/project-imgs/fe-sft.png',
+    link: 'https://front-end-project-sft.vercel.app/',
+    description: "Personal frontend Project for practice.",
+    stack: ['html', 'css', 'bootstrap','javascript'],
+  },
+  
 ];
 
 onMounted(() => {
@@ -231,7 +248,7 @@ onMounted(() => {
 </style>
 
 <template>
-    <Head title="Index">
+    <Head title="Ye Wint Pai | Portfolio">
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     </Head>
@@ -301,6 +318,7 @@ onMounted(() => {
                     :key="index"
                     :title="project.title"
                     :image="project.image"
+                    :link="project.link"
                     :description="project.description"
                     :stack="project.stack"
                 />

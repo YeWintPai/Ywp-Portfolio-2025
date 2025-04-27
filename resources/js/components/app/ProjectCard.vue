@@ -4,6 +4,7 @@ import { computed, ref } from 'vue';
 const props = defineProps<{
   title: string;
   image: string;
+  link: string;
   description: string;
   stack: string[];
 }>();
@@ -26,7 +27,7 @@ const displayedDescription = computed(() => {
   <div
     class="w-full h-auto bg-sky-50 border border-cyan-200 rounded-2xl shadow-md hover:shadow-xl transition-all duration-200 overflow-hidden border border-gray-200"
   >
-    <a href="#" target="_blank" rel="noopener">
+    <a :href="link" target="_blank" rel="noopener">
       <img
         :src="image"
         alt="Project preview"
@@ -46,7 +47,7 @@ const displayedDescription = computed(() => {
         </div>
 
 
-      <p class="text-gray-700 text-sm leading-relaxed">
+      <p class="text-gray-700 text-sm leading-relaxed mt-2">
         {{ displayedDescription }}
         <span
           v-if="shouldShowToggle"
